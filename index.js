@@ -7,6 +7,7 @@
 const http = require('http');
 const url = require('url');
 const StringDecoder = require('string_decoder').StringDecoder;
+const config = require('./config');
 
 
 // Instanciating the HTTP server
@@ -16,8 +17,8 @@ var httpServer = http.createServer(function(req, res){
 
 
 // Start the HTTP server,
-httpServer.listen(8080, function(){
-  console.log("The server is listening on port 8080");
+httpServer.listen(config.httpPort, function(){
+  console.log("The server is listening on port " + config.httpPort);
 });
 
 

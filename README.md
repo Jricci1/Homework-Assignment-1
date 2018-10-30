@@ -19,4 +19,4 @@ It should return 200 status code and an object with two key values properties:
 
 If you try with another route it will return a 404 status code with an object containing a message that advices you to try in the correct path by listing all posible path in "routes".
 
-To acces production or staging, you have to set NODE_ENV variable to one of thouse, the default is staging.
+To acces production or staging, you have to set NODE_ENV variable to one of those, the default is staging.
